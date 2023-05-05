@@ -11,6 +11,7 @@ Dictionary<string, int> diccionario = Departamento
           .Zip(Poblacion, (k, v) => new { Clave = k, Valor = v })
           .ToDictionary(x => x.Clave, x => x.Valor);
 
+//Encontrar los nombres del mayor y el menor
 int maxDep = Poblacion.Max();
 int minDep = Poblacion.Min();
 string maxDepkey = "", minDepkey = "";
@@ -18,6 +19,7 @@ string maxDepkey = "", minDepkey = "";
 for (var i = 0; i < Poblacion.Length; i++)
 {
     if (Poblacion[i] == maxDep)
+    //Ordenando con diccionario y Orderby de LINQ
         maxDepkey = Departamento[i];
     if (Poblacion[i] == minDep)
         minDepkey = Departamento[i];
