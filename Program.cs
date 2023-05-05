@@ -23,10 +23,10 @@ for (var i = 0; i < Poblacion.Length; i++)
         maxDepkey = Departamento[i];
     if (Poblacion[i] == minDep)
         minDepkey = Departamento[i];
-} //mostrar los resultados
+} //Mostrar los resultados
 
 var ordenado = diccionario.OrderBy(x => x.Value).ToDictionary(x => x.Key, x => x.Value);
-//sumar todas las poblaciones con LINQ
+//Sumar todas la poblaciones con LINQ
 Departamento = ordenado.Keys.ToArray();
 Poblacion = ordenado.Values.ToArray();
 
