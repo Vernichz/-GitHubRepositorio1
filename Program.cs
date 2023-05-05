@@ -26,7 +26,7 @@ for (var i = 0; i < Poblacion.Length; i++)
 } //mostrar los resultados
 
 var ordenado = diccionario.OrderBy(x => x.Value).ToDictionary(x => x.Key, x => x.Value);
-//Sumar todas las poblaciones con LINQ
+//sumar todas las poblaciones con LINQ
 Departamento = ordenado.Keys.ToArray();
 Poblacion = ordenado.Values.ToArray();
 
