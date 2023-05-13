@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "20anpCMB0vE7EzLV9rF/9Npi7hc4X17hJlpQweQcwoKh4nUPNcyzG8m6knJW69gnHYBSuMpVpRkw8jeGq1bmDA==",
+  "dgSpecHash": "HE+uMkKp2Od4zPczAxrGELZO4rLk/mKoimAL8kDKAbQ4lUGAu7kKYqwLzGu5cdujMBxudHo5JN155tJ/N6x7QQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Public\\Repositorio Freddy 2023\\ColecDictionary\\ColecDictionary.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\silvi\\Documents\\Semana4\\ColecDictionary\\ColecDictionary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\silvi\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.16\\microsoft.netcore.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\silvi\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.16\\microsoft.windowsdesktop.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\silvi\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.16\\microsoft.aspnetcore.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\silvi\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.16\\microsoft.netcore.app.host.win-x64.6.0.16.nupkg.sha512"
+  ],
   "logs": []
 }
