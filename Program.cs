@@ -21,3 +21,6 @@ foreach (var item in diccionario)
 Console.WriteLine($"{item.Key, -20}==>{item.Value, 10:NO}");
 Console.WriteLine();
 //Ordenado con LINQ OrdeBy el diccionario
+Console.WriteLine($"Población General:{diccionario.Values.Sum():NO}");
+Console.WriteLine($"Departamento con mayor población: {maxDepkey}");
+Console.WriteLine($"Departamento con menor Población: {minDepkey}");
