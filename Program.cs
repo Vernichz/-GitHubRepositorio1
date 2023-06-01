@@ -5,22 +5,24 @@ int[] Poblacion = { 185013, 197139, 439906, 190863, 530586, 414543, 229866, 2143
 Dictionary<string, int> diccionario = Departamento
           .Zip(Poblacion, (k, v) => new { Clave = k, Valor = v })
           .ToDictionary(x => x.Clave, x => x.Valor);
-//Ordenado el diccionario de menor a mayor
-var ordenado = diccionario.OrderBy(x=>x.Value).ToDictionary(x=>x.Key, x=>x.Value);
-//fijando los nombres de los departamentos con menor y mayor población
-string minDepkey = ordenado.First().Key;
-string maxDepkey = ordenado.Last().Key;
-//reasignacion de los arreglos en paralelo
-Departamento = ordenado.Keys.ToArray();
-Poblacion = ordenado.Values.ToArray();
-//Mostrar el diccionario sin ordenar
+int maxDep = Poblacion.Max();
+int minDep = Poblacion.Min();
+string maxDepkey = "",minDepkey==";
 for (var i = 0; i < Poblacion.Length; i++)
-    Console.WriteLine($"{Departamento[i],20} ==> {Poblacion[i], 10:NO}");
+{
+    if (Poblacion[i] == maxDep)
+        maxDepkey = Departamento[i]
+    if (Poblacion[i] == minDep)
+        minDepkey = Departamento[i]
+}
 Console.WriteLine($"datos Desorddenados");
 foreach (var item in diccionario)
-Console.WriteLine($"{item.Key, -20}==>{item.Value, 10:NO}");
-Console.WriteLine();
+   Console.WriteLine($"{item.Key, -20}==>{item.Value, 10:NO}");
+   Console.WriteLine();
 //Ordenado con LINQ OrdeBy el diccionario
+for (var i=0; i<Poblacion.Length; i++)
+     Console.WriteLine($"{Departamento[i], 20} ==> {Poblacion[i], 10:NO}");
+//Sumar las poblaciones con SUM de LINQ
 Console.WriteLine($"Población General:{diccionario.Values.Sum():NO}");
 Console.WriteLine($"Departamento con mayor población: {maxDepkey}");
 Console.WriteLine($"Departamento con menor Población: {minDepkey}");
